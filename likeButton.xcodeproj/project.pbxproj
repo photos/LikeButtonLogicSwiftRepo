@@ -13,6 +13,8 @@
 		A80E25681B364016004BFC05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80E25671B364016004BFC05 /* Images.xcassets */; };
 		A80E256B1B364016004BFC05 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80E25691B364016004BFC05 /* LaunchScreen.xib */; };
 		A80E25771B364016004BFC05 /* likeButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80E25761B364016004BFC05 /* likeButtonTests.swift */; };
+		A80E25811B364206004BFC05 /* emptyHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = A80E25801B364206004BFC05 /* emptyHeart.png */; };
+		A80E25831B364278004BFC05 /* filledHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = A80E25821B364278004BFC05 /* filledHeart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		A80E25701B364016004BFC05 /* likeButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = likeButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80E25751B364016004BFC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A80E25761B364016004BFC05 /* likeButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likeButtonTests.swift; sourceTree = "<group>"; };
+		A80E25801B364206004BFC05 /* emptyHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyHeart.png; sourceTree = "<group>"; };
+		A80E25821B364278004BFC05 /* filledHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filledHeart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		A80E255D1B364016004BFC05 /* likeButton */ = {
 			isa = PBXGroup;
 			children = (
+				A80E25821B364278004BFC05 /* filledHeart.png */,
+				A80E25801B364206004BFC05 /* emptyHeart.png */,
 				A80E25601B364016004BFC05 /* AppDelegate.swift */,
 				A80E25621B364016004BFC05 /* ViewController.swift */,
 				A80E25641B364016004BFC05 /* Main.storyboard */,
@@ -156,7 +162,8 @@
 		A80E25531B364015004BFC05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Forrest Collins";
 				TargetAttributes = {
 					A80E255A1B364016004BFC05 = {
@@ -192,8 +199,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80E25811B364206004BFC05 /* emptyHeart.png in Resources */,
 				A80E25661B364016004BFC05 /* Main.storyboard in Resources */,
 				A80E256B1B364016004BFC05 /* LaunchScreen.xib in Resources */,
+				A80E25831B364278004BFC05 /* filledHeart.png in Resources */,
 				A80E25681B364016004BFC05 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +284,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -338,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = likeButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -348,6 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = likeButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -366,6 +378,7 @@
 				);
 				INFOPLIST_FILE = likeButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/likeButton.app/likeButton";
 			};
@@ -381,6 +394,7 @@
 				);
 				INFOPLIST_FILE = likeButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/likeButton.app/likeButton";
 			};
@@ -405,6 +419,7 @@
 				A80E257C1B364016004BFC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A80E257D1B364016004BFC05 /* Build configuration list for PBXNativeTarget "likeButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +428,7 @@
 				A80E257F1B364016004BFC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
